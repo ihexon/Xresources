@@ -1,101 +1,76 @@
-!++++++++++++++++++++++++++++++++++
-! Ihexon s Xresources
-! github:https://github.com/Ihexon/Xresources
-! 2017-09-10
-!++++++++++++++++++++++++++++++++++
+! Please add Molokai.xrdb PATH
+#include "/home/xingxiu/.xrdb_dir/Molokai.xrdb"
 
+Rxvt*color0:       Ansi_0_Color
+Rxvt*color1:       Ansi_1_Color
+Rxvt*color2:       Ansi_2_Color
+Rxvt*color3:       Ansi_3_Color
+Rxvt*color4:       Ansi_4_Color
+Rxvt*color5:       Ansi_5_Color
+Rxvt*color6:       Ansi_6_Color
+Rxvt*color7:       Ansi_7_Color
+Rxvt*color8:       Ansi_8_Color
+Rxvt*color9:       Ansi_9_Color
+Rxvt*color10:      Ansi_10_Color
+Rxvt*color11:      Ansi_11_Color
+Rxvt*color12:      Ansi_12_Color
+Rxvt*color13:      Ansi_13_Color
+Rxvt*color14:      Ansi_14_Color
+Rxvt*color15:      Ansi_15_Color
+Rxvt*colorBD:      Bold_Color
+Rxvt*colorIT:      Italic_Color
+Rxvt*colorUL:      Underline_Color
+Rxvt*foreground:   Foreground_Color
+Rxvt*background:   Background_Color
+Rxvt*cursorColor:  Cursor_Color
 
+XTerm*color0:      Ansi_0_Color
+XTerm*color1:      Ansi_1_Color
+XTerm*color2:      Ansi_2_Color
+XTerm*color3:      Ansi_3_Color
+XTerm*color4:      Ansi_4_Color
+XTerm*color5:      Ansi_5_Color
+XTerm*color6:      Ansi_6_Color
+XTerm*color7:      Ansi_7_Color
+XTerm*color8:      Ansi_8_Color
+XTerm*color9:      Ansi_9_Color
+XTerm*color10:     Ansi_10_Color
+XTerm*color11:     Ansi_11_Color
+XTerm*color12:     Ansi_12_Color
+XTerm*color13:     Ansi_13_Color
+XTerm*color14:     Ansi_14_Color
+XTerm*color15:     Ansi_15_Color
+XTerm*colorBD:     Bold_Color
+XTerm*colorIT:     Italic_Color
+XTerm*colorUL:     Underline_Color
+XTerm*foreground:  Foreground_Color
+XTerm*background:  Background_Color
+XTerm*cursorColor: Cursor_Color
 
-!You need install NerdFonts on Your System:
-!https://github.com/ryanoasis/nerd-fonts
-xterm*faceName:  DejaVuSansMono NF:style=Book:antialias=true:hinting=full
-xterm*faceSize: 14
-xterm*vt100*geometry: 80x60
-xterm*saveLines: 16384
-xterm*loginShell: true
-xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
-xterm*termName: xterm-256color
-xterm*eightBitInput: false
-XTerm.vt100.locale: true
-XTerm.vt100.metaSendsEscape: true
-XTerm.vt100.backarrowKey: false
-XTerm.ttyModes: erase ^?
-XTerm.vt100.scrollBar: true
-XTerm.vt100.scrollbar.width: 3
-xterm*renderFont: true
-!You need install Google Noto CJK fonts
-!https://github.com/googlei18n/noto-cjk
-XTerm.vt100.faceNameDoublesize: Noto Sans CJK KR Regular:style=Regular
+xterm*faceName:   CodeNewRoman Nerd Font Mono:style=Book:antialias=true:hinting=full
+xterm*faceSize: 12
 XTerm*selectToClipboard: true
-XTerm*ScrollKey: true
-xterm*wideChars:        true
 xterm*utf8: 1
-xterm*locale: true
-XTerm.vt100.allowTitleOps: false
 
-UXTerm*renderFont: true
-Uxterm*faceName:  DejaVuSansMono NF:style=Book:antialias=true:hinting=full
-UXTerm.vt100.faceNameDoublesize: Noto Sans CJK KR Regular:style=Regular
-
-
-
-
-
-
-Xft*dpi:                96
-
-*VT100.Translations: #override \
-                    Shift <Key>Up:              scroll-back(1) \n\
-                    Shift <Key>Down:            scroll-forw(1) \n\
-                    ~Meta Shift Ctrl <Key>V:    insert-selection(CLIPBOARD) \n\
-                     Meta Shift Ctrl <Key>V:    insert-selection(PRIMARY) \n\
-                    ~Shift <Btn1Up>:            select-end(PRIMARY, CUT_BUFFER0) \n\
-                     Shift <Btn1Up>:            select-end(CLIPBOARD, CUT_BUFFER1) \n\
-                    ~Shift ~Ctrl ~Meta <Btn2Up>:insert-selection(PRIMARY, CUT_BUFFER0) \n\
-                     Shift ~Ctrl ~Meta <Btn2Up>:insert-selection(CLIPBOARD, CUT_BUFFER1)
-
-
-
-
-! ++++++++++++++
-! Xterm color  + 
-! ++++++++++++++
-#define nord0 #2E3440
-#define nord1 #3B4252
-#define nord2 #434C5E
-#define nord3 #4C566A
-#define nord4 #D8DEE9
-#define nord5 #E5E9F0
-#define nord6 #ECEFF4
-#define nord7 #5aede5
-#define nord8 #88C0D1
-#define nord9 #81A1C3
-#define nord10 #5E81AC
-#define nord11 #BF616A
-#define nord12 #D08770
-#define nord13 #EBCB8B
-#define nord14 #A3BE8C
-#define nord15 #B48EAD
-
-*.foreground:   nord4
-*.background:   nord0
-*.cursorColor:  nord4
-*fading: 35
-*fadeColor: nord3
-
-*.color0: nord1
-*.color1: nord11
-*.color2: nord14
-*.color3: nord13
-*.color4: nord9
-*.color5: nord15
-*.color6: nord8
-*.color7: nord5
-*.color8: nord3
-*.color9: nord11
-*.color10: nord14
-*.color11: nord13
-*.color12: nord9
-*.color13: nord15
-*.color14: nord7
-*.color15: nord6
+UXTerm*color0:      Ansi_0_Color
+UXTerm*color1:      Ansi_1_Color
+UXTerm*color2:      Ansi_2_Color
+UXTerm*color3:      Ansi_3_Color
+UXTerm*color4:      Ansi_4_Color
+UXTerm*color5:      Ansi_5_Color
+UXTerm*color6:      Ansi_6_Color
+UXTerm*color7:      Ansi_7_Color
+UXTerm*color8:      Ansi_8_Color
+UXTerm*color9:      Ansi_9_Color
+UXTerm*color10:     Ansi_10_Color
+UXTerm*color11:     Ansi_11_Color
+UXTerm*color12:     Ansi_12_Color
+UXTerm*color13:     Ansi_13_Color
+UXTerm*color14:     Ansi_14_Color
+UXTerm*color15:     Ansi_15_Color
+UXTerm*colorBD:     Bold_Color
+UXTerm*colorIT:     Italic_Color
+UXTerm*colorUL:     Underline_Color
+UXTerm*foreground:  Foreground_Color
+UXTerm*background:  Background_Color
+UXTerm*cursorColor: Cursor_Color
