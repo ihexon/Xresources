@@ -55,8 +55,8 @@ URxvt*scrollBar_right: false
 URxvt*internalBorder: 0
 URxvt*externalBorder: 0
 URxvt*letterSpace: -1
-URxvt.font: xft:monospace:size=13
-URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+URxvt.font: xft:CodeNewRoman Nerd Font Mono:style=Book:antialias=true:hinting=full:size=14
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select,tabbed,fullscreen
 URxvt.copyCommand: xclip -i -selection clipboard
 URxvt.pasteCommand: xclip -o -selection clipboard
 URxvt.keysym.m-c: perl:clipboard:copy
@@ -65,11 +65,21 @@ URxvt.urlLauncher: exo-open
 URxvt.underlineURLs: true
 URxvt.urlButton: 1
 URxvt.geometry: 90x34
-URxvt.tabbed.tabbar-fg: 4
-URxvt.tabbed.tabbar-bg: 16
-URxvt.tabbed.tab-fg: 15
-URxvt.tabbed.tab-bg: 4
 URxvt*buffered: false
+
+URxvt.perl-ext: default,url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 3
+URxvt.tabbed.tab-bg: 0
+
+URxvt.keysym.F11: perl:fullscreen:switch
+
+
 
 ! UXTerm
 UXTerm*termName: xterm-256color
