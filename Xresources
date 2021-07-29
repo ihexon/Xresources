@@ -1,24 +1,60 @@
 ! Base colors
-*.foreground:  #E1E1E1
-*.background:  #1c2023
-*.cursorColor: #778899
+!*.foreground:  #E1E1E1
+!*.background:  #1c2023
+!*.cursorColor: #778899
+!
+!*.color0:  #1c2023
+!*.color1:  #bf616a
+!*.color2:  #a3be8c
+!*.color3:  #ebcb8b
+!*.color4:  #8fa1b3
+!*.color5:  #b48ead
+!*.color6:  #96b5b4
+!*.color7:  #E1E1E1
+!*.color8:  #919ba0
+!*.color9:  #bf616a
+!*.color10: #a3be8c
+!*.color11: #ebcb8b
+!*.color12: #8fa1b3
+!*.color13: #b48ead
+!*.color14: #96b5b4
+!*.color15: #c0c5ce
+! -----------------------------------------------------------------------------
+! File: gruvbox-dark.xresources
+! Description: Retro groove colorscheme generalized
+! Author: morhetz <morhetz@gmail.com>
+! Source: https://github.com/morhetz/gruvbox-generalized
+! Last Modified: 6 Sep 2014
+! -----------------------------------------------------------------------------
 
-*.color0:  #1c2023
-*.color1:  #bf616a
-*.color2:  #a3be8c
-*.color3:  #ebcb8b
-*.color4:  #8fa1b3
-*.color5:  #b48ead
-*.color6:  #96b5b4
-*.color7:  #E1E1E1
-*.color8:  #919ba0
-*.color9:  #bf616a
-*.color10: #a3be8c
-*.color11: #ebcb8b
-*.color12: #8fa1b3
-*.color13: #b48ead
-*.color14: #96b5b4
-*.color15: #c0c5ce
+! hard contrast: *background: #1d2021
+*background: #282828
+! soft contrast: *background: #32302f
+*foreground: #ebdbb2
+! Black + DarkGrey
+*color0:  #282828
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #b8bb26
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
+! LightGrey + White
+*color7:  #a89984
+*color15: #ebdbb2
 
 ! Rofi
 rofi.font: monospace 12
@@ -36,7 +72,7 @@ rofi.kb-cancel: Escape,Alt+F1
 ! xterm
 xterm*termName: xterm-256color
 xterm*utf8Title: true
-XTerm*faceSize: 13
+XTerm*faceSize: 16
 xterm*faceName: CodeNewRoman Nerd Font Mono:style=Book:antialias=true:hinting=full
 xterm*loginShell: true
 xterm*vt100*geometry: 90x34
@@ -86,7 +122,7 @@ UXTerm*termName: xterm-256color
 UXTerm*cursorColor: white
 UXTerm*VT100.geometry: 90x34
 UXterm*faceName: CodeNewRoman Nerd Font Mono:style=Book:antialias=true:hinting=full
-UXTerm*faceSize: 13
+UXTerm*faceSize: 16
 Uxterm*utf8Title: true
 UXTerm*dynamicColors: true
 UXTerm*utf8: 2
